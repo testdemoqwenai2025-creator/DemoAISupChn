@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  // GitHub Pages configuration
+  basePath: process.env.NODE_ENV === 'production' ? '/DemoAISupChn' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/DemoAISupChn' : '',
 };
 
 export default nextConfig;
