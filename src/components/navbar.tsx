@@ -3,7 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Shield, LayoutDashboard, Command, Sun, Moon } from 'lucide-react'
+import { Shield, LayoutDashboard, Command, Sun, Moon, Cpu, Brain } from 'lucide-react'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { Button } from '@/components/ui/button'
 
@@ -14,6 +14,8 @@ export function Navbar() {
     { href: '/', label: 'Home', icon: Shield },
     { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
     { href: '/command-center', label: 'Command Center', icon: Command },
+    { href: '/platform', label: 'Platform', icon: Cpu },
+    { href: '/intelligence', label: 'AI/ML', icon: Brain },
   ]
 
   return (
